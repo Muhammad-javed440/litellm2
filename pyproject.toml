@@ -1,0 +1,20 @@
+[project]
+name = "litellm2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad-javed440", email = "meherjaved440@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.59.12",
+]
+
+[project.scripts]
+litellm2 = "litellm2:main"
+gemini = "litellm2.hello:call_gemini"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
